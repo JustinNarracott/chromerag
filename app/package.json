@@ -1,0 +1,19 @@
+{
+  "name": "chromerag-v51",
+  "version": "5.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mammoth": "^1.8.0",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "turndown": "^7.2.0",
+    "jsdom": "^24.1.3"
+  }
+}
