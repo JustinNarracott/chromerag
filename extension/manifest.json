@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "ChromeRAG Sidecar",
+  "version": "6.0.0",
+  "description": "Experimental browser-native local RAG side panel using Chrome Prompt API.",
+  "permissions": [
+    "storage",
+    "sidePanel",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "ChromeRAG"
+  }
+}
