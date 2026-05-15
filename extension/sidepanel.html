@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChromeRAG Sidecar</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <main class="panel">
+    <header>
+      <p class="eyebrow">ChromeRAG Sidecar</p>
+      <h1>Local browser intelligence</h1>
+      <p class="sub">Index the current page, retrieve evidence, and synthesise locally with Chrome's Prompt API.</p>
+    </header>
+
+    <section class="card">
+      <div class="status-row"><span>Prompt API</span><strong id="apiStatus">Checking...</strong></div>
+      <div class="status-row"><span>Indexed pages</span><strong id="pageCount">0</strong></div>
+    </section>
+
+    <section class="actions">
+      <button id="indexPage">Index current page</button>
+      <button id="clearIndex" class="secondary">Clear index</button>
+    </section>
+
+    <section class="card">
+      <label for="question">Question</label>
+      <textarea id="question" placeholder="Ask something about the pages you have indexed..."></textarea>
+      <button id="ask">Retrieve + synthesise locally</button>
+    </section>
+
+    <section class="card">
+      <h2>Answer</h2>
+      <pre id="answer">No answer yet.</pre>
+    </section>
+
+    <section class="card">
+      <h2>Evidence</h2>
+      <div id="evidence"></div>
+    </section>
+  </main>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
